@@ -4,7 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "next dev"
+    "dev": "next dev",
+    "lint": "eslint src --max-warnings=0",
+    "lint:check": "prettier --check src",
+    "lint:fix": "prettier --write src"
   },
   "keywords": [],
   "author": "",
@@ -13,5 +16,8 @@
     "next": "^13.1.6",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "prettier": "^3.0.3"
   }
 }
